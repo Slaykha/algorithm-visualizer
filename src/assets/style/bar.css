@@ -1,0 +1,31 @@
+.bar {
+  text-align: center;
+}
+
+.singleBar {
+  width: 1rem;
+  min-height: 5px;
+}
+
+.barText {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pending {
+  background-color: rgb(34, 0, 255);
+}
+
+.active {
+  background-color: rgb(255, 42, 0);
+}
+
+.switching {
+  background-color: rgb(0, 255, 208);
+}
+
+.sorted {
+  background-color: rgb(50, 188, 29);
+}
