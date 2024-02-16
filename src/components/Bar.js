@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/style/bar.css"
 
-export const Bar = (props) => {
+const Bar = (props) => {
   const {
     bar
   } = props;
@@ -13,3 +13,5 @@ export const Bar = (props) => {
     </div>
   )
 }
+
+export default Bar;

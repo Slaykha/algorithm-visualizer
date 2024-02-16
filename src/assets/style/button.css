@@ -1,0 +1,19 @@
+.customButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  background-color: cornsilk;
+
+  padding: 0.5rem 1rem;
+  min-height: 20px;
+  min-width: 50px;
+
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.customButton:hover {
+  filter: brightness(1.2);
+}

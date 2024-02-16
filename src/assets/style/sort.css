@@ -1,0 +1,10 @@
+.sortContainer {
+
+}
+
+.bars {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  gap: 10px;
+}

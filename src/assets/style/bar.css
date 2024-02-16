@@ -15,17 +15,17 @@
 }
 
 .pending {
-  background-color: rgb(34, 0, 255);
+  background-color: #537FE7;
 }
 
 .active {
-  background-color: rgb(255, 42, 0);
+  background-color: #BE3144;
 }
 
 .switching {
-  background-color: rgb(0, 255, 208);
+  background-color: #F4CE14;
 }
 
 .sorted {
-  background-color: rgb(50, 188, 29);
+  background-color: #4E9F3D;
 }
