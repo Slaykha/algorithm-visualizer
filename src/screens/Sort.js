@@ -7,6 +7,10 @@ import { createRandomBarList } from '../helpers/helpers.js';
 export const Sort = () => {
   const context = new (window.AudioContext || window.webkitAudioContext)();
 
+  const MIN_BAR_VALUE = 1;
+  const MAX_BAR_VALUE = 80;
+
+
   const [isSortStarted, setIsSortStarted] = useState(false)
   const [barList, setBarList] = useState([
     {value: 10, status: "pending"},
@@ -19,8 +23,8 @@ export const Sort = () => {
     {value: 1, status: "pending"},
   ]);
 
-  const resetBarList = () => {
-    setBarList([...createRandomBarList(20, 1, 80)])
+  const resetBarList = ({amount}) => {
+    setBarList([...createRandomBarList(amount, MIN_BAR_VALUE, MAX_BAR_VALUE)])
   }
 
   const triggerSort = () => {
@@ -131,7 +135,7 @@ export const Sort = () => {
           customColor="#12372A"
           textColor="#FEFBF6"
           textSize={18}
-          click={resetBarList}
+          click={() => resetBarList(20)}
         />
       </div>
       <div className="bars">
@@ -139,7 +143,6 @@ export const Sort = () => {
           <Bar 
             key={index}
             bar={bar}
-            // status={bar.status}
           />
         )}
       </div>

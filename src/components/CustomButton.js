@@ -43,7 +43,14 @@ export const CustomButton = (props) => {
   return (
     <div className="customButtonContainer">
       <div 
-        className={`customButton ${type}`} style={{height: h + "px", width: w + "px", color: textColor, backgroundColor: customColor, fontSize: textSize + "px"}}
+        className={`customButton ${type}`} 
+        style={{
+          height: `${h}px`, 
+          width: `${w}px`, 
+          color: textColor, 
+          backgroundColor: customColor, 
+          fontSize: `${textSize}px`
+        }}
         onClick={click}
       >
         {text}
