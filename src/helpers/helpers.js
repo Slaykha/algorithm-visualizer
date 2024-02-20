@@ -3,7 +3,7 @@ export const createRandomBarList = (amount, min, max, status="pending") => {
 
   for (let i = 0; i < amount; i++) {
     // {value: 10, status: "pending"},
-    const element = {value: Math.floor(Math.random() * (max - min) + 1), status: status};
+    const element = {id: i ,value: Math.floor(Math.random() * (max - min) + 1), status: status};
     
     list.push(element);
   }

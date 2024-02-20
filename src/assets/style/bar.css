@@ -5,6 +5,7 @@
 .singleBar {
   width: 1rem;
   min-height: 5px;
+  transition: height 0.3s;
 }
 
 .barText {
@@ -24,6 +25,9 @@
 
 .switching {
   background-color: #F4CE14;
+
+  /* transition: transform 0.2s;
+  transform: translateY(2rem); */
 }
 
 .sorted {
