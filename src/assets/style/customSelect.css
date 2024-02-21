@@ -1,0 +1,110 @@
+.customSelectContainer {
+  position: relative;
+  user-select: none;
+  margin-bottom: 10px;
+}
+
+.customSelect {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  background-color: cornsilk;
+
+  padding: 0.5rem 1rem;
+  min-height: 20px;
+  min-width: 50px;
+
+  font-weight: 600;
+  text-transform: capitalize; */
+
+  position: relative;
+  width: 400px;
+  border-radius: 8px;
+  border: 1px solid #D0D5DD;
+  background-color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+.customSelect:hover {
+  filter: brightness(1.2);
+}
+
+.selectLabel {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 5px;
+  color: var(--text);
+  display: block;
+}
+
+.selected-option {
+  padding: 10px 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--gray-text);
+}
+
+.custom-select-options {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  max-height: 320px;
+  border: 1px solid #D0D5DD;
+  border-top: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #F2F4F7;
+  box-shadow: 0px 12px 16px -4px #10182814;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.custom-option {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  color: var(--gray-text);
+  transition: background-color 0.3s ease;
+}
+
+.custom-option.selected-option {
+  background-color: #F9FAFB;
+}
+
+.custom-option img {
+  margin-left: auto;
+}
+
+.custom-option:hover {
+  background-color: #F9FAFB;
+}
+
+.select-box.active .custom-select-options {
+  display: block; 
+}
+/* 
+.customSelectContainer.passive .custom-select{
+  background-image: url('../img/select-arrow-down.svg');
+}
+
+
+.customSelectContainer.active .custom-select{
+  border-color: #FEC490;
+  background-image: url('../img/select-arrow-up.svg');
+} */
