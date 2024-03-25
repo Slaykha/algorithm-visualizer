@@ -5,6 +5,7 @@ import "../assets/style/sort.css"
 import { createRandomBarList } from '../helpers/helpers.js';
 import { SortLogic } from '../components/Logic/SortLogic.js';
 import { CustomSelect } from '../components/CustomSelect.js';
+import CustomInput from '../components/CustomInput.js';
 
 export const Sort = () => {
   const context = new (window.AudioContext || window.webkitAudioContext)();
@@ -77,6 +78,7 @@ export const Sort = () => {
             <span>{barListLength}</span>
           </div>
           <CustomSelect />
+          <CustomInput label={"label"} placeholder={"placeholder"} validate={true}/>
         </div>
         <div className="bars">
           {barList.map((bar, index) => 

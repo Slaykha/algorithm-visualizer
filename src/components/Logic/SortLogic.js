@@ -62,7 +62,7 @@ export const SortLogic = ({isSortStarted, setIsSortStarted, barList, setBarList}
             setTimeout(() => {
               sortStep(newBars, i, j);
               resolve();
-            }, 100);
+            }, 10);
           })
         }
       }
@@ -75,7 +75,7 @@ export const SortLogic = ({isSortStarted, setIsSortStarted, barList, setBarList}
           setTimeout(() => {
             sorted(newBars, i)
             resolve();
-          }, 100);
+          }, 10);
         }) 
       }
 

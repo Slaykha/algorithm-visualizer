@@ -1,0 +1,30 @@
+.custom-input {
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.custom-input-label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+.custom-input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.custom-input-field:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.custom-input-error {
+  font-size: 14px;
+  color: red;
+}
